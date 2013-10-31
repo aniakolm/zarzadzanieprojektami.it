@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Anna Kolm" />
+    <meta name="date" content="10/24/2013"/>
+    <meta name="generator" content="easybook 4.8"/>
+
+    <title>Zamykanie projektu | Zarządzanie projektami IT</title>
+
+    <link rel="stylesheet" href="./css/easybook.css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+<meta property="og:image" content="http://zarzadzanieprojaktami.it/images/zpit.png"/>
+<meta property="og:title" content="Zarządzanie projektami IT - etapy oraz metody zarządzania projektami"/>
+<meta property="og:site_name" content="Zarządzanie projektami IT - etapy oraz metody zarządzania projektami"/>
+<meta property="og:url" content="http://zarzadzanieprojektami.it"/>
+<meta property="og:description" content="Dowiedź się wiecej o zarządzaniu projaktami IT małej i średniej wielkości."/>
+</head>
+
+<body class="item item:chapter"><div class="container">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1&appId=166622663544294";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<ul class="chunk_nav">
+    <li class="index"><a href="./index.html">Zarządzanie projektami IT</a></li>
+
+    <li class="nav">
+        <div class="previous">
+                            <a href="./25.html"><span>&larr;</span> Poprzedni</a>
+                    </div>
+
+        <div class="next">
+                            <a href="./31.html">Następny <span>&rarr;</span></a>
+                    </div>
+    </li>
+</ul>
+
+
+<div class="line"></div>
+
+<h1 id="26"><span>2.6</span> Zamykanie projektu</h1>
+
+<ul id="chunk_toc">
+            <li class="level-1">
+            <span></span>
+            <a href="#zamykanie-projektu">Zamykanie projektu</a>
+        </li>
+    </ul>
+
+<p>Na tym etapie należy uzyskać od klienta potwierdzenie odbioru stworzonej w ramach projektu aplikacji internetowej oraz następuje jego instalacja na serwerze produkcyjnym. Ponadto warto zebrać, usystematyzować i uzupełnić dokumentację projektową oraz zastanowić się jakie wnioski może wyciągnąć zespół dla siebie na przyszłość. Potem już albo aż można świętować zakończenie projektu.</p>
+
+<p>Niekiedy zakończenie projektu jest wymuszone lub ewidentne i wówczas nie wymaga formalnej akceptacji ze strony klienta. Wymuszone zakończenie projektu to takie, kiedy określona jest sztywna data na kiedy aplikacja musi być gotowa w związku z konkretnym wydarzeniem. Na przykład strona konferencji musi zostać wykonana przed dniem startu rejestracji uczestników. Klient jest zmuszony zaakceptować produkt niezależnie od tego, czy spełnia on wszystkie wymagania. Projekty, których zakończenie jest ewidentne to takie, które wymagają niewielkiej  lub wręcz żadnej weryfikacji, czy wymagania projektowe zostały spełnione. Na przykład projekt mający na celu analizę użyteczności strony zakończy się wraz z przedstawieniem raportu z analizy i rekomendacji.</p>
+
+<p>Bardzo dużą grupę stanowią projekty, które nie mają aż tak sztywnej daty zakończenia oraz wymagają weryfikacji czy lista wymagań została spełniona. W przypadku takich projektów warto stosować formalny sposób odbioru projektu np. poprzez zastosowanie testów akceptacyjnych (więcej: Melnik G., Meszaros G., Bach J.: <em>Acceptance Test Engineering Guide. Volume I: Thinking. How to Decide if Software is Ready for You and Your Customers</em>. Microsoft patterns &amp; practices. 2009). Wymagają one jednak nakładów pracy po stronie klienta i zespołu projektowego i są tworzone na wczesnych etapach realizacji projektu. W uproszczeniu jest to lista funkcjonalności, która musi zostać zweryfikowana przez jednego z członków projektu i odebrana przez klienta. Testy akceptacyjne są częścią testów systemowych, które obejmują o wiele szerszy zakres działań, m.in. testowanie wydajności, użyteczności, obciążenia.</p>
+
+<p>Niezależnie jednak od tego czy efekt projektu wymaga formalnej akceptacji klienta, czy też nie, warto, aby na potrzeby dokumentacji projektu uzyskać od klinta podpis pod protokołem odbioru, którego wzór zamieszczono poniżej.</p>
+
+<div class="figure" id="figure-26-1">
+    <p class="caption"><strong>Rys. 2.6.1</strong> Protokół odbioru</p>
+    <img src="images/protokol-odbioru.png" alt="Protokół odbioru" />
+</div>
+ 
+<strong>Źródło:</strong> Opracowanie własne</p>
+
+<p>Ponieważ dotychczasowe działania podejmowane były na serwerze testowym, w momencie akceptacji aplikacji przez klienta można ją zainstalować na serwerze docelowym. W przypadku aplikacji z systemem zarządzania treścią (ang. Content Management System – CMS) warto przeprowadzić szkolenie klienta z obsługi panelu administracyjnego jeszcze przed instalacją, aby w przypadku wykrycia błędów móc je naprawić na serwerze deweloperskim.</p>
+
+<p>Można wyróżnić dwa szczególnie popularne podejścia w instalowaniu aplikacji na serwerze produkcyjnym. W przypadku aplikacji, które zastąpią dotychczas istniejące rozwiązania, stronę instaluje się na serwerze produkcyjnym, ale pod domeną testową, przez co można ją raz jeszcze przetestować w środowisku identycznym z docelowym. Kiedy nowa strona zostanie przetestowana, a treści uzupełnione, można skierować domenę na nową lokalizację, co kończy proces instalacji. W przypadku nowych wersji już istniejących stron bardzo ważnym zagadnieniem instalacji jest przeniesienie treści ze starej strony na nową, co można wykonać manualnie, ale bardzo często podejmowana jest próba automatyzacji poprzez import starej bazy danych do nowego projektu. Drugie podejście polega na instalacji strony na serwerze docelowym i pod domeną docelową. Jest to podejście dużo bardziej inwazyjne, ale najczęściej stosowane w przypadku nowych projektów, gdzie adres strony nie jest rozpowszechniony lub znajdowała się pod nim jedynie pojedyncza strona informacyjna. [1 s.286]</p>
+
+<p>Kolejnym elementem zamykania projektu jest przygotowanie dokumentacji. Jest ona szczególnie istotna, jeśli produkt powstały w wyniku realizacji projektu będzie dalej rozwijany, ulepszany, a także naprawiany i dostosowywany. W takim przypadku dokumentacje będzie punktem wyjścia dla kolejnego projektu, niezależnie od tego, czy będzie on realizowany przez ten sam czy inny zespół projektowy. Dokumentacja ma również znaczenie z punktu widzenia uczenia się i optymalizacji pracy organizacji. Zbiór informacji o przeszłych projektach może posłużyć jako materiały szkoleniowe dla nowych project manager’ów i innych członków grupy projektowej czy też jako pomoc w lepszym oszacowaniu czasu i kosztu w przyszłych projektach. Zwłaszcza ze względu na tę drugą możliwość późniejszego wykorzystania, dokumentacja nie powinna się ograniczać do przedstawienia jak projekt zaplanowano, ale powinna również uwzględniać jak projekt zrealizowano, jakie pojawiły się odchylenia od planu i dlaczego. Dokumentacja projektowa może również zostać wykorzystana jako wkład do projektu mającego na celu optymalizację realizacji projektów w organizacji. Należy jednak zachować rozwagę, ponieważ niektóre projekty były skazane na powodzenie mimo że proces ich realizacji pozostawiał wiele do życzenia i na odwrót. Wyciągając wnioski pochopnie można doprowadzić do sytuacji, w której powielane będą nieodpowiednie działania. [1 s.287-288]</p>
+
+<p>Zagadnienie dokumentacji w projektach informatycznych bardzo często kojarzone jest jedynie z dokumentacją techniczną.  Jest to dokumentacja przeznaczona dla programistów, którzy będą modyfikować program. Bardzo często podejmuje się działania w celu automatycznego wygenerowania dokumentacji technicznej wprost z kodu źródłowego. Możliwość zautomatyzowania tworzenia dokumentacji technicznej niestety wymaga również dodatkowej pracy programisty, dlatego niezależnie od tego czy zostanie ona opracowana tradycyjnie, czy też wygenerowana czas poświęcony na jej przygotowanie powinien zostać uwzględniony w harmonogramie projektu. Oprócz dokumentacji technicznej funkcjonuje również dokumentacja użytkowa przeznaczona dla użytkowników i administratorów systemu. Pełna dokumentacja projektowa powinna również uwzględniać:</p>
+
+<ul>
+<li>kartę projektu,  </li>
+<li>WBS,  </li>
+<li>harmonogram,  </li>
+<li>prototyp,  </li>
+<li>specyfikację,  </li>
+<li>umowy,  </li>
+<li>raporty ze spotkań zespołu projektowego uwzględniające ich czas trwania oraz przedstawiające ówczesny status prac,  </li>
+<li>analizy z testów użyteczności,  </li>
+<li>pliki graficzne,  </li>
+<li>protokoły odbioru,  </li>
+<li>inne dokumenty związane z projektem, jak np. dokumentację z testów aplikacji, wykaz czasu pracy, kopie istotnych komunikatów i korespondencji, podsumowanie spotkania ewaluacyjnego.  </li>
+</ul>
+
+<p>Każdy dokument powinien uwzględniać wprowadzone w nim podczas realizacji projektu aktualizacje, zmiany i poprawki.</p>
+
+<p>Dokumentacja nie musi ograniczać się do przedstawionych wyżej elementów, ale też nie wszystkie z nich musi zawierać. Każda dokumentacja tak jak projekt jest inna i  przy jej tworzeniu powinno się przede wszystkim uwzględniać dobry stosunek nakładu pracy do korzyści.</p>
+
+<p>Wśród wyżej wymienionych dokumentów pojawiło się podsumowanie spotkania ewaluacyjnego. To czy takie spotkanie się w ogóle odbędzie zazwyczaj stoi pod dużym znakiem zapytania. Najczęściej koniec jednego projektu, to początek kolejnego i brakuje czasu na spędzenie dodatkowych godzin nad już zamkniętym projektem, choć praktycy przekonują, że warto. Podczas takiego spotkania kierownik wraz z zespołem powinien odpowiedzieć na następujące pytania: [1 s.289-290]</p>
+
+<ol>
+<li>Czy cele projektu został osiągnięty w mniemaniu zespołu projektowego i klienta?  </li>
+<li>Czy projekt został zrealizowany na czas, w określonym budżecie i czy spełnia wymagania określone w specyfikacji? Jeśli nie, to dlaczego?  </li>
+<li>Czy klient był zadowolony z efektów projektu?  </li>
+<li>Czy udało się osiągnąć wartość biznesową?  </li>
+<li>Jakie wnioski dotyczące metodyki projektu można wyciągnąć?  </li>
+<li>Co zadziałało, a co nie?  </li>
+</ol>
+
+<p>W ten sposób doszliśmy do końca projektu, który można teraz zwieńczyć wspólnym wyjściem czy upominkiem dla całego zespołu projektowego.</p>
+
+<p>W kolejnym rozdziale przedstawione zostaną konkretne metodyki realizacji projektów w oparciu o przedstawione w tym rozdziale etapy.</p>
+
+<div class="thin-line"></div>
+
+<p>[1] Wysocki R.K.: Effective Project Management: Traditional. Agile, Extreme. Indianapolis. 2009. Wiley Publishing Inc.</p>
+
+
+<div class="line"></div>
+
+<ul class="chunk_nav">
+    <li class="index"><a href="./index.html">Zarządzanie projektami IT</a></li>
+
+    <li class="nav">
+        <div class="previous">
+                            <a href="./25.html"><span>&larr;</span> Poprzedni</a>
+                    </div>
+
+        <div class="next">
+                            <a href="./31.html">Następny <span>&rarr;</span></a>
+                    </div>
+    </li>
+</ul>
+
+
+</div></body>
+</html>

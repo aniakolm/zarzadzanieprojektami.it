@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Anna Kolm" />
+    <meta name="date" content="10/24/2013"/>
+    <meta name="generator" content="easybook 4.8"/>
+
+    <title>Extreme Programming | Zarządzanie projektami IT</title>
+
+    <link rel="stylesheet" href="./css/easybook.css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+<meta property="og:image" content="http://zarzadzanieprojaktami.it/images/zpit.png"/>
+<meta property="og:title" content="Zarządzanie projektami IT - etapy oraz metody zarządzania projektami"/>
+<meta property="og:site_name" content="Zarządzanie projektami IT - etapy oraz metody zarządzania projektami"/>
+<meta property="og:url" content="http://zarzadzanieprojektami.it"/>
+<meta property="og:description" content="Dowiedź się wiecej o zarządzaniu projaktami IT małej i średniej wielkości."/>
+</head>
+
+<body class="item item:chapter"><div class="container">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1&appId=166622663544294";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<ul class="chunk_nav">
+    <li class="index"><a href="./index.html">Zarządzanie projektami IT</a></li>
+
+    <li class="nav">
+        <div class="previous">
+                            <a href="./33.html"><span>&larr;</span> Poprzedni</a>
+                    </div>
+
+        <div class="next">
+                            <a href="./35.html">Następny <span>&rarr;</span></a>
+                    </div>
+    </li>
+</ul>
+
+
+<div class="line"></div>
+
+<h1 id="34"><span>3.4</span> Extreme Programming</h1>
+
+<ul id="chunk_toc">
+            <li class="level-1">
+            <span></span>
+            <a href="#extreme-programming">Extreme Programming</a>
+        </li>
+    </ul>
+
+<p>Programowanie ekstremalne (ang. Extreme Programming - XP) opracował programista Kent Beck. W 1996 roku Beck został zatrudniony w firmie Chrysler jako lider długo-terminowego projektu Chrysler Comprehensive Compensation System (C3), którego celem było przepisanie aplikacji płacowej. Wypracowane przez niego podejście do zarządzania tym projektem Beck opisał następnie w książce Extreme Programming Explained: Embrace Change, która została wydana w 1999 roku przez Addison-Wesley. [1]</p>
+
+<p>Extreme Programming jest jedną z najpopularniejszych zwinnych metod zarządzania projektami IT i chociaż większość metodyk Agile ocenia się jako mniej rygorystyczne niż metodyki tradycyjne, to w przypadku XP takie określenie jest dalekie od prawdy. [2 s.2] Być może dlatego w podejściu R.K. Wysockiego przedstawionym na początku rozdziału Extreme Programming jest wręcz wyłączone z grupy metodyk zwinnych.</p>
+
+<p>Extreme Programming swoją nazwę wzieło od pytania, które zadał sobie Beck: <em>Co by się stało, gdyby wziąć każdą technikę/dobrą praktykę i realizować je do granic rozsądku?</em> Na przykład dobrą praktyką w realizacji projektów IT jest przegląd kodu. Ekstremalne podejście do przeglądu kodu (ang. code review) polegałoby na realizowaniu tego zadania w sposób ciągły, ale czy takie podejście faktycznie miałoby pozytywny wpływ na projekt. Takie rozważania doprowadziły do wypracowania innych dobrych praktyk jak programowanie parami czy refaktoryzacja (ang. refactoring), które wspierają projektowanie prostych, efektywnych, maksymalizujących wartość biznesową apliakcji. Właściwe i pełne wdrożenie podejścia ekstremalnego wymaga wysokiego poziomu dyscypliny, pracy zespołowej i umiejętności. [2 s.2] Twórca podejścia ekstremalnego ten wysoki próg wejścia uznaje wręcz za atut metodyki, ponieważ jest ona tak samo trudna dla wszystkich przy czym trudności pojawianią się na różnych płaszczyznach. Niemcy mają problem z rezygnacją ze struktury hierarchicznej na rzecz zespołów projektowych. Meksykanie z kolei mają problem z ciągłym dbaniem o pisanie testów. [3]</p>
+
+<p>Przy całej odmienności XP od pozostałych metod zwinnych wartości wskazane jako główne w XP nie różnią sie znacznie od pozostałych podejść. Są to: prostota, komunikacja, feedback, szacunek i odwaga. [4]</p>
+
+<p>Extreme Programming największy nacisk kładzie jednak na aspekt techniczny projektu. Nic więc dziwnego, że wspomniane wyżej wartości przekładają się na konkretne techniki, które należy realizować. Są to: [5 s. 70-77.]</p>
+
+<ul>
+<li><strong>Gry planistyczne</strong> – Klienci decydują odnośnie zakresu i harmonogramu wydań w oparciu o szacunki dostarczone przez programistów. Zespół realizuje tylko te funkcjonalności, które wynikają z historyjek zaplanowanych na daną iterację. (Znaczne podobieństwo do Scrum’a).  </li>
+<li><strong>Małe, częste wydania</strong> – System jest wgrywany na serwer produkcyjny dużo wcześniej zanim jest gotowy w całości. Nowe wydania są wgrywane często – w cyklu dziennym do miesięcznego.  </li>
+<li><strong>Metafory</strong> – System zdefiniowany jest poprzez metaforę lub zbiór metafor, które są zrozumiałe dla klienta i programistów.  </li>
+<li><strong>Prosta budowa</strong> – Na każdym etapie budowania kodu powinien on uwzględniać testy i komunikaty. Nie powinno być mowy o zduplikowanym kodzie, a klas i metod powinno się stosować jak najmniej. Tę praktykę można sparafrazować stwierdzeniem: <em>Napisz coś raz i tylko raz</em>.  </li>
+<li><strong>Testy</strong> – Programiści odpowiadają za systematyczne pisanie testów jednostkowych. Wszystkie testy jednostkowe muszą być zaliczone przed wysłaniem zmian na serwer. Klienci odpowiadają za przygotowanie testów funkcjonalnych dla każdej historyjki dla danej iteracji. Wszystkie testy funkcjonalne powinny być zaliczone, ale można z tego zrezygnować po zestawieniu kosztów wysłania błędu i opóźnienia wysłania.  </li>
+<li><strong>Refactoring</strong> – Budowa systemu podlega zmianom, które nie wpływają negatywnie na przeprowadzone testy.  </li>
+<li><strong>Programowanie parami</strong> – Programiści pracują w parach na jednym komputerze. Podczas gdy jeden pisze, drugi weryfikuje kod.  </li>
+<li><strong>Ciągła integracja</strong> – Nowy kod może zostać zintegrowany z obecnym systemem w ciągu paru godzin. Podczas integracji, kiedy system budowany jest z części, każda zmiana musi przejść testy albo zostaje odrzucona.  </li>
+<li><strong>Współwłasność</strong> – Każdy programista może wprowadzać zmiany, usprawnienia, poprawki w każdej z części systemu.  </li>
+<li><strong>Współpraca z klientem</strong> – Klient siedzi z zespołem w czasie pracy.  </li>
+<li><strong>40-godzinny tydzień pracy</strong> – Nikt nie wyrabia godzin nadliczbowych w drugim tygodniu z rzędu. Nawet pojedyncze nagodziny są oznaką problemu, który należy rozwiązać.  </li>
+<li><strong>Otwarte miejsce pracy</strong> – Zespół pracuje w dużym pokoju z małymi przestrzeniami roboczymi. Programiści pracujący w parach są zlokalizowani w centrum.  </li>
+<li><strong>Tylko i aż zasady (Dobre praktyki)</strong> – Zespół decydując się na pracę w oparciu o XP godzi się na zasady, które mu przyświecają. Przy czym zasady te może zmieniać, dostosowywać/usuwać w celu wypracowania dobrych praktyk dopasowanych do swoich potrzeb. W tym celu zespół powinien jednak uwzględniać zależności jakie istnieją pomiędzy poszczególnymi zasadami. Zależności te reprezentuje wykres 3.4.1.  </li>
+</ul>
+
+<div class="figure" id="figure-34-1">
+    <p class="caption"><strong>Rys. 3.4.1</strong> Dobre praktyki w Extreme Programming oraz ich współzależności</p>
+    <img src="images/wyk-3-7.png" alt="Dobre praktyki w Extreme Programming oraz ich współzależności" />
+</div>
+
+<strong>Źródło:</strong> Opracowanie własne na podstawie Lane D., Coffin R.: A Practical Guide to Seven Agile Methodologies. Part 1. Devx.com. 2006. s. 2. i Beck K.: Embracing Change with Extreme Programming. Computer. 1999. nr 32. s. 70-77.</p>
+
+<p>Extreme Programming definiuje się jako podejście iteracyjne przy czym autor tej metodyki określa XP jako podejście alternatywne do iteracyjnego, co obrazuje wykres 3.4.2.</p>
+
+<div class="figure" id="figure-34-2">
+    <p class="caption"><strong>Rys. 3.4.2</strong> Proces zarządzania projektem w podejściu tradycyjnym, iteracyjnym i Extreme Programming</p>
+    <img src="images/wyk-3-8.png" alt="Proces zarządzania projektem w podejściu tradycyjnym, iteracyjnym i Extreme Programming" />
+</div>
+
+<strong>Źródło:</strong> Opracowanie własne na podstawie Beck K.: Embracing Change with Extreme Programming. Computer. 1999. nr 32. s. 70.</p>
+
+<p>Na wykresie jako pierwsze zostało przedstawione podejście tradycyjne, w którym etapy analizy, projektowania, wdrożenia i testów następują kolejno po sobie, a każdy z nich obejmuje cały zakres projektu. Metoda iteracyjna będąca odpowiedzią na kryzys takiego podejścia zaproponowała proste rozwiązanie w oparciu o ten sam schemat procesu. Rozwiązanie to polegało na zmniejszeniu opracowywanego zakresu projektu, a przez to podzielenie projektu na mniejsze, racjonalne, a przede wszystkim łatwiej zarządzalne części. Podejście ekstremalne zmienia proces łącząc wszystkie etapy w krótkim czasie opracowując niewielki zakres projektu.</p>
+
+<p>W praktyce przekłada się to na proces podobny do tego, który funkcjonuje w Scrumie. Na początku przygotowuje się zestaw historyjek. <em>Historyjka jest jednostką funkcjonalności w projektach XP. Powinna być zrozumiała i wartościowa dla klientów, testowalna przez programistów i na tyle mała, żeby programiści mogli zaimplementować sześć historyjek w jednej iteracji.</em> [6 s.42] Mając na uwadze priorytety wdrożenia opracowanych historyjek oraz ich oszacowany czas realizacji wybiera się zestaw funkcjonalności, które zostaną wdrożone w nadchodzącym wydaniu. Spośród nich wybiera się zestaw historyjek (maksymalnie sześć), które zostaną wdrożone w najbliższej iteracji. Historyjki te są dzielone na mniejsze zadania, które jedna osoba może zrealizować w ciągu kilku dni. Zadania uwzględniają wszystkie kwestie: projektowe, techniczne, konsultacje, itp. Pojedynczy programiści decydują, które zadania zostaną przez nich zrealizowane, a następnie szacują czas ich realizacji w dniach idealnych. Zanim programista zacznie realizację zadania szuka partnera, ponieważ każda linijka kodu produkcyjnego jest pisana i weryfikowana przez dwie osoby. W trakcie iteracji programiści realizują przypisane sobie zadania, testują, a następnie integrują z całym systemem. W razie wątpliwości konsultują je z klientem. W trakcie iteracji klient opracowuje testy funkcjonalne. Na koniec iteracji są zaimplementowane i działają zarówno testy jednostkowe, jak i funkcjonalne. Celem iteracji jest wdrożenie przetestowanych funkcjonalności na serwer produkcyjny tak, że użytkownicy mogą już z nich korzystać. [5 s. 70-77]</p>
+
+<p>Jak widać proces ten jak wspomniano wcześniej jest bardzo zbliżony do podejścia scrumowego przy czym XP duży nacisk kładzie na testy, a opis metodyki uwagę skupia przede wszystkim na aspektach technicznych realizacji projektu. W związku z tym te dwie metodyki mogą być komplementarne, gdzie Scrum uzupełnia podejście XP o kwestie związane z work flow.</p>
+
+<p>XP definiuje niewielką liczbę ról w procesie zarządzania i realizacji projektu. Są to: [2 s.3]</p>
+
+<ul>
+<li><strong>Klient</strong> – tworzy i priorytetyzuje historyjki, które mają zostać wdrożone. Odpowiada za opracowanie testów funkcjonalnych. Klient kontroluje zakres projektu i może wpływać na datę wydania.  </li>
+<li><strong>Programista</strong> – wspólnie z innymi programistami szacuje czas poszczególnych historyjek, ale indywidualnie decyduje się na wykonanie pojedynczych zadań, samodzielnie określa czas ich realizacji oraz odpowiada za przygotowanie testów i integrację z systemem.  </li>
+<li><strong>Trener</strong> – monitoruje proces tworzenia oprogramowania, wspiera zespół w zakresie procesu i technik wynikających z XP, skupia uwagę zespołu na potencjalnych zagrożeniach oraz możliwosciach optymalizacji.  </li>
+<li><strong>Kontroler</strong> – monitoruje progres zespołu i informuje o potrzebie wprowadzenia korekt do harmonogramu lub/i ponownego opracowania zadań.  </li>
+</ul>
+
+<div class="thin-line"></div>
+
+<p>[1] Copeland L.: Extreme Programming. computerworld.com. 2001.<br />
+[2] Lane D., Coffin R.: <em>A Practical Guide to Seven Agile Methodologies. Part 1</em>. Devx.com. 2006.<br />
+[3] Beck K.: Interview with Kent Beck and Martin Fowler. informit.com. 2001.<br />
+[4] http://www.extremeprogramming.org/values.html z dnia 17.08.2013<br />
+[5] Beck K.: <em>Embracing Change with Extreme Programming</em>. Computer. 1999. nr 32.<br />
+[6] Beck K., Fowler M.: Planning Extreme Programming. Boston. Addison-Wesley. 2000.</p>
+
+
+<div class="line"></div>
+
+<ul class="chunk_nav">
+    <li class="index"><a href="./index.html">Zarządzanie projektami IT</a></li>
+
+    <li class="nav">
+        <div class="previous">
+                            <a href="./33.html"><span>&larr;</span> Poprzedni</a>
+                    </div>
+
+        <div class="next">
+                            <a href="./35.html">Następny <span>&rarr;</span></a>
+                    </div>
+    </li>
+</ul>
+
+
+</div></body>
+</html>

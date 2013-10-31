@@ -1,0 +1,35 @@
+/* 
+    Document   : style
+    Author     : Ania Kolm
+*/
+body {font-family: 'roboto';}
+a {color: #4f81bd !important; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -ms-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; text-decoration: none !important;}
+a:hover {color: #222 !important; text-decoration: none !important;}
+div.item {border-bottom: 2px solid #ddd; padding-bottom: 1.5em;}
+div.item\:license a {color: #222 !important;}
+div.item\:license a:hover {color: #4f81bd !important;}
+div.item\:cover h1 {margin: 0; font-family: 'roboto'; font-weight: 700; text-transform: uppercase;}
+div.item\:cover h2 a {color: #777 !important; text-transform: uppercase;}
+div.item\:cover h2 a:hover {color: #4f81bd !important;}
+div.item\:toc {margin-bottom: 1em;}
+div.item\:toc ul li.part {text-transform: uppercase;}
+.item\:toc ul li.level-1 span {font-weight: bold;}
+div.item\:toc ul li a {color: #222 !important;}
+div.item\:toc ul li a:hover {color: #4f81bd !important;}
+div.item\:toc ul li a:visited {}
+.item .chunk_nav {background-color: #fff;}
+ul.chunk_nav li {text-transform: uppercase;}
+ul.chunk_nav li a {color: #222 !important; text-transform: uppercase;}
+ul.chunk_nav li a:hover {color: #4f81bd !important; text-decoration: none !important;}
+ul.chunk_nav li.nav div {padding: 0 .5em !important;}
+ul.chunk_nav li.nav div a {padding: 0 !important;}
+.item\:chapter h1 {text-transform: uppercase;}
+.item\:chapter h1 span {color: #222; font-size: 100%; font-weight: bold;}
+div.figure img {width: 100%;}
+div.thin-line {border-bottom: 1px solid #ddd; width: 100%;}
+div.line {border-bottom: 2px solid #ddd; width: 100%;}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  div.item\:cover h1 {font-size: 67px;}
+}
