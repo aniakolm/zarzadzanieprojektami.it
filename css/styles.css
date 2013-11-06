@@ -15,11 +15,10 @@ div.item\:license img {width: 280px; float: left; padding-right: 10px;}
 div.item\:license a {color: #222 !important;}
 div.item\:license a:hover {color: #4f81bd !important;}
 div.item\:toc {margin-bottom: 1em;}
-div.item\:toc ul li.part {text-transform: uppercase;}
-.item\:toc ul li.level-1 span {font-weight: bold;}
+div.item\:toc ul li.part {text-transform: uppercase; color: #777;}
 div.item\:toc ul li a {color: #222 !important;}
 div.item\:toc ul li a:hover {color: #4f81bd !important;}
-div.item\:toc ul li a:visited {}
+div.item\:toc ul li a:visited {color: #777 !important;}
 .item .chunk_nav {background-color: #fff;}
 ul.chunk_nav li {text-transform: uppercase;}
 ul.chunk_nav li a {color: #222 !important; text-transform: uppercase;}
